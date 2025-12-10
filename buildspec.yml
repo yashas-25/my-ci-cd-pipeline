@@ -2,15 +2,26 @@ version: 0.2
 
 phases:
   install:
+    runtime-versions:
+      nodejs: 18
     commands:
-      - echo "Starting build..."
+      - echo "Installing dependencies..."
+      
+  pre_build:
+    commands:
+      - echo "Pre-build phase - checking files"
+      - ls -la
+      
   build:
     commands:
-      - echo "Build stage - nothing to build for static site"
+      - echo "Build phase - preparing static files"
+      - echo "HTML and CSS files ready for deployment"
+      
   post_build:
     commands:
-      - echo "Syncing files to S3"
-      - aws s3 sync . s3://ci-cd-pipeline45 --delete
+      - echo "Build completed successfully"
+
 artifacts:
   files:
     - '**/*'
+  name: website-artifacts
