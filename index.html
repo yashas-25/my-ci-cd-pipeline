@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CI/CD Pipeline Project - DevOps Excellence</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">🚀 CI/CD Pipeline</div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pipeline">Pipeline</a></li>
+                <li><a href="#tech">Tech Stack</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Automated CI/CD Pipeline</h1>
+            <p>Streamline Your Development Workflow with Continuous Integration & Deployment</p>
+            <a href="#" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Key Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Automated Testing</h3>
+                    <p>Run comprehensive test suites automatically on every commit to ensure code quality and catch bugs early.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Continuous Integration</h3>
+                    <p>Integrate code changes frequently with automated builds and testing for faster development cycles.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Rapid Deployment</h3>
+                    <p>Deploy applications to production with confidence using automated deployment pipelines.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Real-time Monitoring</h3>
+                    <p>Track pipeline status, build logs, and deployment metrics in real-time dashboards.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔐</div>
+                    <h3>Security Scanning</h3>
+                    <p>Automated security vulnerability scanning and code quality checks at every stage.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔧</div>
+                    <h3>Easy Configuration</h3>
+                    <p>Simple YAML-based pipeline configuration that's easy to version control and maintain.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pipeline" class="pipeline">
+        <div class="container">
+            <h2>Pipeline Workflow</h2>
+            <div class="pipeline-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Code Commit</h3>
+                    <p>Push to repository</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Build</h3>
+                    <p>Compile & package</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Test</h3>
+                    <p>Run test suites</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Scan</h3>
+                    <p>Security checks</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <h3>Deploy</h3>
+                    <p>Release to production</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tech" class="tech-stack">
+        <div class="container">
+            <h2>Technology Stack</h2>
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <div style="font-size: 48px;">🐙</div>
+                    <h4>GitHub</h4>
+                </div>
+                <div class="tech-item">
+                    <div style="font-size: 48px;">🔷</div>
+                    <h4>Jenkins</h4>
+                </div>
+                <div class="tech-item">
+                    <div style="font-size: 48px;">🐳</div>
+                    <h4>Docker</h4>
+                </div>
+                <div class="tech-item">
+                    <div style="font-size: 48px;">☸️</div>
+                    <h4>Kubernetes</h4>
+                </div>
+                <div class="tech-item">
+                    <div style="font-size: 48px;">📦</div>
+                    <h4>Maven</h4>
+                </div>
+                <div class="tech-item">
+                    <div style="font-size: 48px;">🔍</div>
+                    <h4>SonarQube</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 CI/CD Pipeline Project. Built with DevOps Excellence.</p>
+            <p style="margin-top: 10px; opacity: 0.8;">Automating the future of software delivery</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.style.boxShadow = '0 5px 30px rgba(0,0,0,0.15)';
+            } else {
+                header.style.boxShadow = '0 2px 20px rgba(0,0,0,0.1)';
+            }
+        });
+    </script>
+</body>
+</html>
